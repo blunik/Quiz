@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Quiz</string>
+    <string name="rules_text">Правила игры. \n
+        Дорогой мой друг, мой возлюбленный,повелитель моего сердца,правила просты. \n
+    Играй и отвечай на вопросы.Если правильно угадаешь,то получишь приз.
+        Но его еще надо будет найти.Он будет спрятан.Думай,а потом отвечай.
+        У тебя всего три попытки! \n
+        Удачи!</string>
+    <string name="about_text">Love</string>
+    <string name="title_android_trivia_question">Quiz (%1$d/%2$d)</string>
+    <string name="ready_to_get_a_prize">Ready to get a prize?</string>
+</resources>
