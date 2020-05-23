@@ -9,17 +9,14 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import com.example.android.quiz.databinding.FragmentGameWonBinding
 
+//Фагмент выйгрыша
 class GameWonFragment : Fragment() {
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
-       val binding: FragmentGameWonBinding = DataBindingUtil.inflate(
-           inflater, R.layout.fragment_game_won, container, false)
+       val binding: FragmentGameWonBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_game_won, container, false)
         binding.nextMatchButton.setOnClickListener { view: View ->
             view.findNavController().navigate(
-                GameWonFragmentDirections.actionGameWonFragmentToGameFragment())
+                GameWonFragmentDirections.actionGameWonFragmentToAboutFragment())
         }
         return binding.root
     }

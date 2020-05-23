@@ -10,11 +10,14 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
 import com.example.android.quiz.databinding.FragmentGameBinding
 
+//Фрагмент игры
 class GameFragment : Fragment() {
     data class Question(
         val text: String,
         val answers: List<String>)
 
+
+//База данных вопрос и ответов.Первый ответ правильный,но они генеирируются
     private val questions: MutableList<Question> = mutableListOf(
         Question(text = "Начнем.Когда мы расстались и сошлись во второй раз?",
             answers = listOf("17 сентября и 26 октября", "16 сентября и 27 октября", "16 сентября и 25 октября", "16 сентября и 26  октября ")),
@@ -38,15 +41,13 @@ class GameFragment : Fragment() {
             answers = listOf("Бесконечность пусичек", "Вечность", "Бесконечность", "До самой смерти"))
     )
 
+
     lateinit var currentQuestion: Question
     lateinit var answers: MutableList<String>
     private var questionIndex = 0
     private val numQuestions = 1
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
         val binding = DataBindingUtil.inflate<FragmentGameBinding>(
             inflater, R.layout.fragment_game, container, false

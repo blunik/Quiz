@@ -47,13 +47,13 @@
         android:label="Game Won"
         tools:layout="@layout/fragment_game_won">
         <action
-            android:id="@+id/action_gameWonFragment_to_gameFragment"
-            app:destination="@id/gameFragment"
+            android:id="@+id/action_gameWonFragment_to_aboutFragment"
+            app:destination="@id/aboutFragment"
             app:enterAnim="@anim/slide_in_right"
+            app:popUpTo="@+id/titleFragment"
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right"
-            app:popUpTo="@+id/titleFragment"/>
+            app:popExitAnim="@anim/slide_out_right"/>
     </fragment>
     <fragment
         android:id="@+id/gameOverFragment"

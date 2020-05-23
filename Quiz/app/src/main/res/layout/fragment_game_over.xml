@@ -42,7 +42,7 @@
 
         <Button
             android:id="@+id/tryAgainButton"
-            android:layout_width="200dp"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/vertical_margin"
             android:layout_marginTop="40dp"
@@ -51,7 +51,7 @@
             android:layout_marginBottom="8dp"
             android:paddingStart="@dimen/button_padding"
             android:paddingEnd="@dimen/button_padding"
-            android:text="Try Again?"
+            android:text="Попробовать снова?"
             android:background="@drawable/rounded_button"
             android:textColor="#EC407A"
             android:textSize="@dimen/button_text_size"

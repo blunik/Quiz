@@ -7,11 +7,9 @@ import android.view.ViewGroup
 
 import androidx.fragment.app.Fragment
 
+//Правила
 class RulesFragment : Fragment() {
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
         return inflater.inflate(R.layout.fragment_rules, container, false)
     }
