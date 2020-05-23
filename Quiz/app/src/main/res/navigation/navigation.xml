@@ -16,6 +16,14 @@
             app:exitAnim="@anim/slide_out_left"
             app:popEnterAnim="@anim/slide_in_left"
             app:popExitAnim="@anim/slide_out_right"/>
+        <action
+            android:id="@+id/action_titleFragment_to_rulesFragment"
+            app:destination="@id/rulesFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:popUpTo="@+id/titleFragment"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
     </fragment>
     <fragment
         android:id="@+id/gameFragment"
@@ -77,6 +85,6 @@
     <fragment
         android:id="@+id/aboutFragment"
         android:name="com.example.android.quiz.AboutFragment"
-        android:label="About"
+        android:label="@string/love_letter"
         tools:layout="@layout/fragment_about" />
 </navigation>

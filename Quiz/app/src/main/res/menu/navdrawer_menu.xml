@@ -5,10 +5,10 @@
         android:id="@+id/rulesFragment"
         android:fontFamily="@font/wee"
         android:icon="@drawable/rules"
-        android:title="Rules" />
+        android:title="@string/rules" />
     <item
         android:id="@+id/aboutFragment"
         android:icon="@drawable/heart"
         android:fontFamily="@font/wee"
-        android:title="About" />
+        android:title="@string/love_letter" />
 </menu>

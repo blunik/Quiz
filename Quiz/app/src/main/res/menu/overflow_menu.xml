@@ -4,7 +4,7 @@
 
     <item
         android:id="@+id/aboutFragment"
-        android:title="About"
+        android:title="@string/love_letter"
         android:fontFamily="@font/wee"/>
 
 </menu>

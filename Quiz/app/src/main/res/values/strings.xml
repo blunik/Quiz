@@ -16,4 +16,6 @@
     </string>
     <string name="title_android_trivia_question">Quiz (%1$d/%2$d)</string>
     <string name="ready_to_get_a_prize">Ready to get a prize?</string>
+    <string name="rules">Rules</string>
+    <string name="love_letter">Love letter</string>
 </resources>
