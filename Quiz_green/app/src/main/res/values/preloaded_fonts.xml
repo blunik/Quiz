@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/aclonica</item>
+        <item>@font/alex_brush</item>
+        <item>@font/almendra_display</item>
+        <item>@font/annie_use_your_telescope</item>
+        <item>@font/arizonia</item>
+        <item>@font/codystar_light</item>
+    </array>
+</resources>

@@ -1,0 +1,13 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#A7FFEB</item>
+        <item name="android:fontFamily">@font/wee</item>
+        <item name="fontFamily">@font/wee</item>
+        <item name="colorPrimaryDark">#A7FFEB</item>
+        <item name="colorAccent">#FF7043</item>
+    </style>
+
+</resources>
