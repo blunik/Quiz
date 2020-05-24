@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
@@ -46,7 +47,7 @@ class GameFragment : Fragment() {
     lateinit var answers: MutableList<String>
     private var questionIndex = 0
     private val numQuestions = 1
-
+    private var popt = 3
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View? {
         val binding = DataBindingUtil.inflate<FragmentGameBinding>(
@@ -78,6 +79,12 @@ class GameFragment : Fragment() {
                             GameFragmentDirections.actionGameFragmentToGameWonFragment()
                         )
                     }
+                } else if (popt > 0)
+                {
+                    popt -= 1
+                    val builder = AlertDialog.Builder(this!!.activity!!)
+                    builder.setMessage("Оставшихся попыток: $popt").create().show()
+
                 } else {
                     view.findNavController()
                         .navigate(GameFragmentDirections.actionGameFragmentToGameOverFragment())

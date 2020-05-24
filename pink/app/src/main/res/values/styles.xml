@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
@@ -9,5 +9,6 @@
         <item name="colorPrimaryDark">#F3E5F5</item>
         <item name="colorAccent">#E1BEE7</item>
     </style>
+
 
 </resources>
